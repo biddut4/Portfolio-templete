@@ -101,7 +101,7 @@ ul{
     color: var(--white-color);
 }
 .section_btn_2{
-    padding: 12px 30px;
+    padding: 3px 30px;
     background-color: transparent;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.295743);
@@ -121,10 +121,16 @@ ul{
     padding: 16px 0;
     background-color: var(--section-color);
 }
-.header_area .nav_area{
-    height: 100%;
-    display: flex;
+.navbar-nav{
     align-items: center;
+    justify-content: space-between;
+    width: 88%;
+}
+.navbar-collapse{
+    justify-content: end;
+}
+.header_area .section_btn_2 {
+    margin-left: 96px;
 }
 .header_area .nav_area nav{
     width: 100%;
@@ -498,106 +504,216 @@ ul{
     color: var(--title-color);
     line-height: 0;
 }
-
-/* .testimonial {
-    background: var(--BgColor);
-}
-
-.inner_Testimonial .item {
+.testimonial_btn{
     text-align: center;
 }
-
-
-.inner_Testimonial .item .testimonial_img {
-    width: 220px;
-    height: 220px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    border-radius: 50%;
-    margin-bottom: 22px;
+.testimonial_btn a{
+    background-color: var(--white-color);
+    color: var(--title-color);
+    border: 1px solid var(--white-color);
+    box-shadow: 0px, 3px
+    rgba(57, 20, 0, 0.08);
+}
+.testimonial_btn a:hover{
+    background-color: var(--first-color);
+    border: 1px solid var(--first-color);
+    color: var(--white-color);
+}
+/*====================  FAQ AREA CSS ====================*/
+.faq_area{
+    background-color: var(--section-color);
+}
+.faq_area .faq_title_area h2{
+    Font-style: 800;
+    Font-size: 40px;
+    Line-height: 48px;
+    color: var(--white-color);
+}
+.faq_area .faq_title_area p{
+    color: var(--text-color-light);
+    margin: 30px 0;
+}
+.faq_area .faq_Tab .tab_item table{
+    border: 1px solid #3A3C56;
+}
+.faq_area .faq_Tab .tab_item table td{
+    padding: 40px;
 }
 
-.margining {
-    margin: 0 11px;
-}
-
-
-.inner_Testimonial .item .testimonial_title {
-    margin-bottom: 45px;
-}
-
-.inner_Testimonial .item .testimonial_title h4 {
-    font-size: var(--SubTitle);
-    letter-spacing: 0px;
-    color: var(--SecendaryColor);
-    font-weight: 700;
-    font-family: var(--mainfont);
-}
-
-.inner_Testimonial .item .testimonial_title span {
-    font-size: var(--Textsize);
-    letter-spacing: 0px;
-    color: var(--TextColor);
-    font-family: var(--textfont);
-}
-
-
-.inner_Testimonial .item .testimonial_title .social_link {
-    text-align: center;
+.faq_area .faq_Tab .tab_item .faq_title{
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
+}
+.faq_area .faq_Tab .tab_item .faq_title h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white-color);
+}
+.faq_area .faq_Tab .tab_item .faq_title i{
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    background-color: var(--first-color);
+    border-radius: 50%;
     justify-content: center;
-    margin-top: 11px;
+    align-items: center;
+}
+.faq_area .faq_Tab .tab_item .faq_text{
+    display: none;
+}
+.faq_area .faq_Tab .tab_item .faq_text p{
+    color: var(--text-color);
+}
+.tab_bg{
+    background-color: var(--white-color);
 }
 
-.inner_Testimonial .item .testimonial_title .social_link a {
+/*====================  BLOG AREA CSS ====================*/
+.blog_area .testimonial_btn{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+.blog_area .blogs{
+    margin: 60px 0;
+}
+
+.blog_area .blogs .blog .blog_img{
+    width: 100%;
+    border-radius: 8px;
+    height: 464px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 26px;
+}
+.blog_area .blogs .blog .blog_img .img_overly{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 32, 0, 31.81%);
+    border-radius: 8px;
+}
+.blog_area .blogs .blog .blog_catagory h3{
+    font-size: 20px;
+    color: var(--title-color);
+    margin-bottom: 15px;
+}
+.blog_area .blogs .blog .blog_title h2{
+    color: var(--title-color);
+    font-size: var(--sub-title);
+    font-weight: bold;
+}
+.blog_area .blogs .blog .blog_title .font_view{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+}
+.blog_area .blogs .blog .blog_date p{
+    color: var(--text-color);
+}
+.blog_area .blogs .blog .small_height{
+    height: 160px;
+}
+.blog_area .newslater_area{
+    margin-top: 60px;
+}
+.blog_area .newslater_area .newlater_title h3{
+    font-size: var(--sub-title);
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+.blog_area .newslater_area .newlater_title p{
+    color: var(--text-color);
+}
+
+.blog_area .newslater_area .newslater_form input{
+    padding: 18px;
+    background-color: var(--white-color);
+    border-radius: 6px;
+}
+.blog_area .newslater_area .newslater_form input[type='text']{
+    width: 65%;
+    border: 1px solid rgba(243, 209, 191, 1);
+}
+.blog_area .newslater_area .newslater_form input[type='submit']{
+    width: 25%;
+    margin-left: 20px;
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px, 3px
+    rgba(57, 20, 0, 0.08);
+}
+.blog_area .newslater_area .newslater_form input[type='submit']:hover{
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+
+
+
+
+
+
+
+
+/*====================  FOOTER AREA CSS ====================*/
+.footer_area {
+    background-color: var(--section-color);
+    padding-top: 85px;
+}
+.footer_area .footer_widget .widget_menu{
+    margin-top: 30px;
+}
+.footer_area .footer_widget .widget_menu ul li{
+    margin-bottom: 10px;
+}
+.footer_area .footer_widget .widget_menu ul li a{
+    color:var(--white-color);
+    font-size: var(--normal-size);
+    font-weight: 400;
+}
+.footer_area .footer_widget .widget_menu ul li a:hover{
+    color: var(--first-color);
+    margin-left: 5px;
+}
+.footer_area .footer_social_area{
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+}
+.footer_area .footer_social_area a{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--first-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    border: 2px solid var(--SecendaryColor);
-    border-radius: 50%;
 }
-
-.inner_Testimonial .item .testimonial_title .social_link a i {
-    color: var(--SecendaryColor);
-}
-
-.inner_Testimonial .item .testimonial_title .social_link a:hover {
-    background: var(--PrimaryColor);
-}
-
-.inner_Testimonial .item .testimonial_title .social_link a:hover i {
+.footer_area .footer_social_area a i{
+    color: var(--white-color);
+    display: inline-block;
     font-size: 20px;
-    color: #fff;
 }
-
-.inner_Testimonial .content {
-    max-width: 600px;
-    margin: 0 auto;
+.footer_area hr{
+    border: 1px solid #3A3C56;
+    background-color: #3A3C56;
+    margin-bottom: 30px;
 }
-
-.inner_Testimonial .content p {
-    font-size: var(--SubTitle);
-    letter-spacing: 0px;
-    color: var(--TextColor);
-    font-weight: 400;
-    font-family: var(--textfont);
-    text-align: center;
-} */
-
-
-
-
-
-
-
-
-
+.footer_area .footer_bottom .copyright_area p{
+    color: var(--text-color-light);
+}
+.footer_area .footer_bottom .policy ul{
+    display: flex;
+    justify-content: end;
+    gap: 60px;
+}
+.footer_area .footer_bottom .policy ul li a{
+    color: var(--white-color);
+}
 
 
 
@@ -637,7 +753,18 @@ ul{
         justify-content: center;
         margin-left: 18px;
     }
+    .faq_area .faq_Tab .tab_item table td {
+        padding: 30px;
+    }
+    .faq_area .faq_Tab .tab_item .faq_title h3 {
+        font-size: 19px;
+    }
+
+    .blog_area .newslater_area .newslater_form input {
+        padding: 11px;
+    }
 }
+
 @media screen and (max-width: 768px){
     :root{
         --title-size: 40px;
@@ -697,5 +824,44 @@ ul{
     }
     .get_start_area .left_area {
         margin-bottom: 60px;
+    }
+
+    
+
+
+
+
+
+
+
+    /*====================  FOOTER RESPONSIVE AREA CSS ====================*/
+    .footer_area {
+        text-align: center;
+    }
+    .footer_area .footer_widget{
+        margin-top: 50px;
+    }
+    .footer_area .footer_social_area {
+        justify-content: center;
+        margin: 36px 0;
+    }
+    .footer_area .footer_bottom .policy {
+        margin: 30px 0;
+    }
+    
+    .footer_area .footer_bottom .policy ul {
+        justify-content: center;
+    }
+    .faq_area .faq_Tab .tab_item table {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 576px){
+    .blog_area .blogs .blog .blog_img {
+        height: 160px;
+    }
+    .blog_area .blogs .blog .blog_title .font_view {
+        font-size: 24px;
+        line-height: 30px;
     }
 }
