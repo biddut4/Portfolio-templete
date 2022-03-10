@@ -1,0 +1,538 @@
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    /*========== Colors ==========*/
+    --first-color: #EF6D58;
+    --first-color-second: #EF6C57;
+    --title-color: #391400;
+    --text-color: rgba(57, 20, 0, 0.64);
+    --text-color-light: rgba(255, 255, 255, 0.64);
+    --body-color: #FDF0E9;
+    --section-color: #28293E;
+    --white-color: #fff;
+
+    /*========== Font ==========*/
+    --body-font: 'Epilogue', sans-serif; 
+
+    /*========== Font size ==========*/
+    --normal-size: 16px;
+    --title-size: 56px;
+    --sub-title: 24px;
+
+    /*========== Font lineheight ==========*/
+    --normal-line-height: 32px;
+    --title-line-height: 64px;
+
+    /*========== Font weight ==========*/
+    --font-medium: 400;
+    --font-bold: bold;
+    --font-extra-bold: 800;
+
+}
+
+/*==================== COMMON CSS ====================*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition:all .5s;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+p{
+    font-style: normal;
+    font-weight: var(--font-medium);
+    font-size: var(--normal-size);
+    line-height: var(--normal-line-height);
+}
+input{
+    outline: none;
+    border: none;
+}
+body{
+    background-color: var(--body-color);
+    font-family: var(--body-font);
+    transition: all .5s;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.section_title{
+    font-style: normal;
+    font-weight: var(--font-extra-bold);
+    font-size: var(--title-size);
+    line-height: var(--title-line-height);
+    letter-spacing: -1px;
+    color: var(--title-color);
+}
+.section_sub_title{
+    font-style: normal;
+    font-weight: var(--font-medium);
+    font-size: var(--normal-size);
+    color: var(--first-color);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.section_padding{
+    padding: 92px 0;
+}
+.section_btn_1{
+    padding: 12px 30px;
+    background-color: var(--first-color);
+    border-radius: 6px;
+    border: 1px solid var(--first-color);
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.section_btn_1:hover{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    color: var(--white-color);
+}
+.section_btn_2{
+    padding: 12px 30px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.section_btn_2:hover{
+    background-color: var(--first-color);
+    border: 1px solid var(--first-color);
+    color: var(--white-color);
+}
+
+/*==================== HEADER AREA CSS ====================*/
+.header_area{
+    padding: 16px 0;
+    background-color: var(--section-color);
+}
+.header_area .nav_area{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header_area .nav_area nav{
+    width: 100%;
+}
+.header_area .nav_area nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.header_area .nav_area nav ul li{
+    display: flex;
+    align-items: center;
+}
+.header_area .nav_area nav ul li a{
+    font-size: var(--normal-size);
+    font-weight: var(--font-medium);
+    color: var(--white-color);
+}
+.header_area .contact_btn{
+    display: flex;
+    justify-content: end;
+}
+
+/*====================  HERO AREA CSS ====================*/
+.hero_area{
+    background-color: var(--section-color);
+}
+.hero_text{
+    margin-right: 63px;
+}
+.hero_text h1{
+    font-style: normal;
+    font-weight: var(--font-extra-bold);
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    color: var(--white-color);
+    margin-bottom: 24px;
+}
+.hero_text p{
+    color: var(--text-color-light);
+    margin-bottom: 34px;
+}
+
+/*==================== SERVICE AREA CSS ====================*/
+.service_area .service_item .margin{
+    padding: 0;
+}
+.service_area .service_item .item_box{
+    border: 1px solid #F3D1BF;
+    padding: 48px;
+}
+.service_area .service_item .item_box .box_title{
+    display: flex;
+    margin-bottom: 28px;
+}
+.service_area .service_item .item_box .box_title i{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #EF6C57;
+    text-align: center;
+    line-height: 80px;
+    font-size: 26px;
+    color: var(--white-color);
+}
+.service_area .service_item .item_box .box_title h3{
+    font-size: var(--sub-title);
+    line-height: 80px;
+    margin-left: 24px;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+.service_area .service_item .item_box .box_text{
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+.service_area .service_item .item_box .box_btn a{
+    color: var(--title-color);
+    font-size: var(--normal-size);
+}
+.service_area .service_item .item_box .box_btn i{
+    width: 48px;
+    height: 48px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    text-align: center;
+    color: var(--first-color);
+    line-height: 49px;
+    margin-right: 16px;
+}
+.service_area .service_bottom{
+    text-align: center;
+    padding-top: 30px;
+}
+.service_area .service_bottom span{
+    color: var(--text-color);
+    font-size: var(--normal-size);
+    margin-right: 8px;
+}
+.service_area .service_bottom a{
+    color: var(--title-color);
+    font-size: var(--normal-size);
+}
+
+/*==================== PORTFOLIO AREA CSS ====================*/
+.portfolio_area{
+    background-color: var(--section-color);
+}
+.portfolio_area .title_area{
+    margin-bottom: 64px;
+}
+.portfolio_area .title_area .area_btn {
+    display: flex;
+    justify-content: end;
+}
+.portfolio_area .area_title h2{
+    color: var(--white-color);
+}
+.border_around{
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    padding: 16px 16px;
+}
+.portfolio_items{
+    padding: 0 20px;
+}
+.portfolio_items .portfolio_item{
+    height: 576px;
+    max-width: 448px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio_items .portfolio_item .background_overly{
+    background-color: rgb(57 20 0 / 32%);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.portfolio_items .portfolio_item .background_overly .text{
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 30px 50px;
+}
+.portfolio_items .portfolio_item .background_overly .text .catagory{
+    width: 120px;
+    height: 38px;
+    background-color: var(--white-color);
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 23px;
+}
+.portfolio_items .portfolio_item .background_overly .text .catagory span{
+    display: inline-block;
+    font-size: var(--normal-size);
+    color: var(--title-color);
+}
+.portfolio_items .portfolio_item .background_overly .text .name h3{
+    color: var(--white-color);
+    font-size: 40px;
+}
+
+/*====================  Gabriel Pires AREA CSS ====================*/
+.hero_area{
+    background-color: var(--section-color);
+}
+.gabriel_area .hero_text h4{
+    font-size: 20px;
+    line-height: var(--normal-line-height);
+    color: var(--title-color);
+    margin: 20px 0;
+}
+.gabriel_area .hero_text p{
+    margin-bottom: 34px;
+    color: var(--text-color);
+}
+
+.gabriel_area .hero_text .section_btn{
+    padding: 12px 30px;
+    background-color: var(--white-color);
+    border-radius: 6px;
+    border: 1px solid var(--white-color);
+    color: var(--title-color);
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.gabriel_area .hero_text .section_btn:hover{
+    background-color: var(--first-color);
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    color: var(--white-color);
+}
+.gabriel_area .project_overview{
+    margin-top: 92px;
+}
+.gabriel_area .project_overview .overview_item .box_title{
+    display: flex;
+}
+.gabriel_area .project_overview .overview_item .box_title i{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #EF6C57;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    color: var(--white-color);
+}
+.gabriel_area .project_overview .overview_item{
+    border: 1px solid #F3D1BF;
+    padding: 32px 0 32px 45px;
+}
+.gabriel_area .project_overview .overview_item .box_title .box_title_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+}
+.gabriel_area .project_overview .overview_item .box_title h3{
+    font-size: 40px;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    margin-bottom: 5px;
+}
+.gabriel_area .project_overview .overview_item .box_title h2{
+    font-size: 20px;
+    margin: 0;
+}
+
+/*====================  FEATURES AREA CSS ====================*/
+.features_area{
+    background-color: var(--section-color);
+}
+.features_area .hero_text h1{
+    font-style: normal;
+    font-weight: var(--font-extra-bold);
+    font-size: var(--title-size);
+    line-height: var(--title-line-height);
+    letter-spacing: -1px;
+    color: var(--white-color);
+}
+.features_area .hero_text p{
+    color: var(--white-color);
+    font-size: 20px;
+}
+.features_area .features_list ul li{
+    margin-bottom: 16px;
+    color: var(--text-color-light);
+    font-size: var(--normal-size);
+}
+.features_area .features_list ul li i{
+    color: var(--white-color);
+    padding: 8px 9px;
+    border-radius: 50%;
+    background-color: var(--first-color);
+    margin-right: 16px;
+}
+
+
+/*====================  GET STARTED AREA CSS ====================*/
+.get_start_area{
+    padding: 47px 0;
+    background-color: #F9E5DA;
+}
+.get_start_area .left_area{
+    position: relative;
+    margin-top: 50px;
+}
+.get_start_area .left_area h2{
+    Font-style: Bold;
+    Font-size: 24px;
+    Line-height: var(--normal-line-height);
+    color: var(--title-color);
+    margin-bottom: 23px;
+}
+
+.get_start_area .left_area a:hover{
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--title-color);
+}
+.get_start_area .left_area .area_img{
+    position: absolute;
+    width: 148px;
+    height: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -176px;
+}
+.get_start_area .left_area .area_img i{
+    color: var(--white-color);
+    font-size: 32px;
+}
+.get_start_area .middle_area{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.get_start_area .middle_area p{
+    color: var(--text-color);
+}
+.get_start_area .right_area{
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 0;
+}
+.get_start_area .right_area img{
+    margin-top: 25px;
+}
+
+
+
+@media screen and (max-width: 992px){
+    :root{
+        --title-size: 46px;
+    }
+    
+    /*====================  HERO RESPONSIVE AREA CSS ====================*/
+    .hero_text {
+        margin-right: 14px;
+    }
+
+    /*====================  PORTFOLIO RESPONSIVE AREA CSS ====================*/
+    .portfolio_items .portfolio_item .background_overly .text {
+        padding: 0 0 15px 26px;
+    }
+    .portfolio_items .portfolio_item .background_overly .text .name h3 {
+        font-size: 31px;
+    }
+
+    /*====================  Gabriel Pires RESPONSIVE AREA CSS ====================*/
+    .gabriel_area .project_overview .overview_item {
+        padding: 24px 0 24px 15px;
+    }
+    .gabriel_area .project_overview .overview_item .box_title .box_title_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 18px;
+    }
+}
+@media screen and (max-width: 768px){
+    :root{
+        --title-size: 40px;
+    }
+    .section_padding{
+        padding: 52px 0;
+    }
+
+    /*====================  HERO RESPONSIVE AREA CSS ====================*/
+    .hero_text {
+        margin-right: 10px;
+    }
+    .hero_area .hero_img{
+        margin-bottom: 30px;
+    }
+    .hero_area .hero_text h1{
+        font-style: normal;
+        font-weight: var(--font-extra-bold);
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -1px;
+        color: var(--white-color);
+        margin-bottom: 15px;
+    }
+    .hide{
+        display: none;
+    }
+
+    /*====================  SERVICE RESPONSIVE AREA CSS ====================*/
+    .service_area .service_item .margin{
+        padding: 8px;
+    }
+
+    /*====================  PORTFOLIO RESPONSIVE AREA CSS ====================*/
+    .portfolio_area .title_area{
+        margin-bottom: 48px;
+    }
+    .portfolio_area .title_area .area_btn {
+        justify-content: start;
+    }
+    .portfolio_area .area_title h2{
+        margin-bottom: 35px;
+    }
+    .portfolio_items .portfolio_item{
+        height: 437px;
+    }
+    .portfolio_items .portfolio_item .background_overly .text{
+        padding: 0 0 15px 35px;
+    }
+
+    /*====================  GET STARTED RESPONSIVE AREA CSS ====================*/
+    .get_start_area .left_area .area_img{
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        top: -160px;
+    }
+    .get_start_area .left_area {
+        margin-bottom: 60px;
+    }
+}
