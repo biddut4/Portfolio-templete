@@ -865,3 +865,13 @@ ul{
         line-height: 30px;
     }
 }
+
+.simpleParallax {
+    overflow: unset!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img.thumbnail {
+    width: 70%;
+}
